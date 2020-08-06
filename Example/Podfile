@@ -1,13 +1,22 @@
 use_frameworks!
 
-target 'dotLottieR_Example' do
-  platform :ios, '9.0'
+def available_pods
   pod 'dotLottieR', :path => '../'
   pod 'dotLottieLoader', git: 'https://github.com/eharrison/dotLottieLoader'
+end
 
+target 'dotLottieR_Example' do
+  platform :ios, '9.0'
+  available_pods
+  
   target 'dotLottieR_Tests' do
     inherit! :search_paths
 
     
   end
+end
+
+target 'dotLottieR_watchos Extension' do
+  platform :watchos, '6.0'
+  available_pods
 end

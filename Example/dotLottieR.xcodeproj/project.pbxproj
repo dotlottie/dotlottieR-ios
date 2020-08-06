@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		26C3DA08A8944E9A2359CCB3 /* Pods_dotLottieR_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBFF7298AD4825829AA754A /* Pods_dotLottieR_Tests.framework */; };
+		4414E4B3F0D1990517FD7992 /* Pods_dotLottieR_watchos_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1255C3D9096FDB4B65FC504F /* Pods_dotLottieR_watchos_Extension.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		94EB89FA24DBC0CD007951BA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EB89F824DBC0CD007951BA /* Interface.storyboard */; };
+		94EB89FC24DBC0CF007951BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EB89FB24DBC0CF007951BA /* Assets.xcassets */; };
+		94EB8A0324DBC0CF007951BA /* dotLottieR_watchos Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94EB8A0224DBC0CF007951BA /* dotLottieR_watchos Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94EB8A0824DBC0CF007951BA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EB8A0724DBC0CF007951BA /* InterfaceController.swift */; };
+		94EB8A0A24DBC0CF007951BA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EB8A0924DBC0CF007951BA /* ExtensionDelegate.swift */; };
+		94EB8A0C24DBC0CF007951BA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EB8A0B24DBC0CF007951BA /* NotificationController.swift */; };
+		94EB8A0E24DBC0D0007951BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EB8A0D24DBC0D0007951BA /* Assets.xcassets */; };
+		94EB8A1324DBC0D0007951BA /* dotLottieR_watchos.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94EB89F624DBC0CD007951BA /* dotLottieR_watchos.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A21E6D4A65725F6355B27239 /* Pods_dotLottieR_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CB67C678BEE94170E5C692 /* Pods_dotLottieR_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +34,50 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = dotLottieR;
 		};
+		94EB8A0424DBC0CF007951BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94EB8A0124DBC0CF007951BA;
+			remoteInfo = "dotLottieR_watchos Extension";
+		};
+		94EB8A1124DBC0D0007951BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94EB89F524DBC0CD007951BA;
+			remoteInfo = dotLottieR_watchos;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94EB8A1424DBC0D0007951BA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				94EB8A1324DBC0D0007951BA /* dotLottieR_watchos.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EB8A1724DBC0D0007951BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94EB8A0324DBC0CF007951BA /* dotLottieR_watchos Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		119507A6FB4A2E3ED83D8F22 /* Pods-dotLottieR_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dotLottieR_Example.release.xcconfig"; path = "Target Support Files/Pods-dotLottieR_Example/Pods-dotLottieR_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1255C3D9096FDB4B65FC504F /* Pods_dotLottieR_watchos_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dotLottieR_watchos_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CB67C678BEE94170E5C692 /* Pods_dotLottieR_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dotLottieR_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E0BD545A022617127171BC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5490407404EACA8BE1EDCAA9 /* dotLottieR.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = dotLottieR.podspec; path = ../dotLottieR.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -45,8 +94,21 @@
 		70240FA333847A8E23D541D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		740AFC981B1311504E7B3E13 /* Pods-dotLottieR_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dotLottieR_Tests.release.xcconfig"; path = "Target Support Files/Pods-dotLottieR_Tests/Pods-dotLottieR_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7EBFF7298AD4825829AA754A /* Pods_dotLottieR_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dotLottieR_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EB89F624DBC0CD007951BA /* dotLottieR_watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dotLottieR_watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EB89F924DBC0CD007951BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		94EB89FB24DBC0CF007951BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94EB89FD24DBC0CF007951BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94EB8A0224DBC0CF007951BA /* dotLottieR_watchos Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "dotLottieR_watchos Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EB8A0724DBC0CF007951BA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		94EB8A0924DBC0CF007951BA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		94EB8A0B24DBC0CF007951BA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		94EB8A0D24DBC0D0007951BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94EB8A0F24DBC0D0007951BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94EB8A1024DBC0D0007951BA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B200C104F264DB4DB1F2F90F /* Pods-dotLottieR_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dotLottieR_Example.debug.xcconfig"; path = "Target Support Files/Pods-dotLottieR_Example/Pods-dotLottieR_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C90FADAA7B0C699BD65D0400 /* Pods-dotLottieR_watchos Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dotLottieR_watchos Extension.debug.xcconfig"; path = "Target Support Files/Pods-dotLottieR_watchos Extension/Pods-dotLottieR_watchos Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		DA0D5405A11E7E01BEB54D79 /* Pods-dotLottieR_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dotLottieR_Tests.debug.xcconfig"; path = "Target Support Files/Pods-dotLottieR_Tests/Pods-dotLottieR_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB304E78A880281FF1D1C34F /* Pods-dotLottieR_watchos Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dotLottieR_watchos Extension.release.xcconfig"; path = "Target Support Files/Pods-dotLottieR_watchos Extension/Pods-dotLottieR_watchos Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +128,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		741C82CCD0BE3464A6BC444F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EB89FF24DBC0CF007951BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4414E4B3F0D1990517FD7992 /* Pods_dotLottieR_watchos_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +153,8 @@
 				119507A6FB4A2E3ED83D8F22 /* Pods-dotLottieR_Example.release.xcconfig */,
 				DA0D5405A11E7E01BEB54D79 /* Pods-dotLottieR_Tests.debug.xcconfig */,
 				740AFC981B1311504E7B3E13 /* Pods-dotLottieR_Tests.release.xcconfig */,
+				C90FADAA7B0C699BD65D0400 /* Pods-dotLottieR_watchos Extension.debug.xcconfig */,
+				EB304E78A880281FF1D1C34F /* Pods-dotLottieR_watchos Extension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -86,6 +165,8 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for dotLottieR */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				94EB89F724DBC0CD007951BA /* dotLottieR_watchos */,
+				94EB8A0624DBC0CF007951BA /* dotLottieR_watchos Extension */,
 				607FACD11AFB9204008FA782 /* Products */,
 				19B07D807D04DDBAF0F0C36D /* Pods */,
 				99567470F013402686F792A6 /* Frameworks */,
@@ -97,6 +178,8 @@
 			children = (
 				607FACD01AFB9204008FA782 /* dotLottieR_Example.app */,
 				607FACE51AFB9204008FA782 /* dotLottieR_Tests.xctest */,
+				94EB89F624DBC0CD007951BA /* dotLottieR_watchos.app */,
+				94EB8A0224DBC0CF007951BA /* dotLottieR_watchos Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,11 +233,35 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		94EB89F724DBC0CD007951BA /* dotLottieR_watchos */ = {
+			isa = PBXGroup;
+			children = (
+				94EB89F824DBC0CD007951BA /* Interface.storyboard */,
+				94EB89FB24DBC0CF007951BA /* Assets.xcassets */,
+				94EB89FD24DBC0CF007951BA /* Info.plist */,
+			);
+			path = dotLottieR_watchos;
+			sourceTree = "<group>";
+		};
+		94EB8A0624DBC0CF007951BA /* dotLottieR_watchos Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94EB8A0724DBC0CF007951BA /* InterfaceController.swift */,
+				94EB8A0924DBC0CF007951BA /* ExtensionDelegate.swift */,
+				94EB8A0B24DBC0CF007951BA /* NotificationController.swift */,
+				94EB8A0D24DBC0D0007951BA /* Assets.xcassets */,
+				94EB8A0F24DBC0D0007951BA /* Info.plist */,
+				94EB8A1024DBC0D0007951BA /* PushNotificationPayload.apns */,
+			);
+			path = "dotLottieR_watchos Extension";
+			sourceTree = "<group>";
+		};
 		99567470F013402686F792A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				31CB67C678BEE94170E5C692 /* Pods_dotLottieR_Example.framework */,
 				7EBFF7298AD4825829AA754A /* Pods_dotLottieR_Tests.framework */,
+				1255C3D9096FDB4B65FC504F /* Pods_dotLottieR_watchos_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,10 +278,12 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				8705C81E17AA066466E502D6 /* [CP] Embed Pods Frameworks */,
+				94EB8A1424DBC0D0007951BA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				94EB8A1224DBC0D0007951BA /* PBXTargetDependency */,
 			);
 			name = dotLottieR_Example;
 			productName = dotLottieR;
@@ -200,13 +309,50 @@
 			productReference = 607FACE51AFB9204008FA782 /* dotLottieR_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		94EB89F524DBC0CD007951BA /* dotLottieR_watchos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94EB8A1B24DBC0D0007951BA /* Build configuration list for PBXNativeTarget "dotLottieR_watchos" */;
+			buildPhases = (
+				94EB89F424DBC0CD007951BA /* Resources */,
+				94EB8A1724DBC0D0007951BA /* Embed App Extensions */,
+				741C82CCD0BE3464A6BC444F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94EB8A0524DBC0CF007951BA /* PBXTargetDependency */,
+			);
+			name = dotLottieR_watchos;
+			productName = dotLottieR_watchos;
+			productReference = 94EB89F624DBC0CD007951BA /* dotLottieR_watchos.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		94EB8A0124DBC0CF007951BA /* dotLottieR_watchos Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94EB8A1A24DBC0D0007951BA /* Build configuration list for PBXNativeTarget "dotLottieR_watchos Extension" */;
+			buildPhases = (
+				E6609209A9D98AF956F2BA6F /* [CP] Check Pods Manifest.lock */,
+				94EB89FE24DBC0CF007951BA /* Sources */,
+				94EB89FF24DBC0CF007951BA /* Frameworks */,
+				94EB8A0024DBC0CF007951BA /* Resources */,
+				8747C6D115AE1ED06799B028 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dotLottieR_watchos Extension";
+			productName = "dotLottieR_watchos Extension";
+			productReference = 94EB8A0224DBC0CF007951BA /* dotLottieR_watchos Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -218,6 +364,15 @@
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 1160;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					94EB89F524DBC0CD007951BA = {
+						CreatedOnToolsVersion = 11.6;
+						ProvisioningStyle = Automatic;
+					};
+					94EB8A0124DBC0CF007951BA = {
+						CreatedOnToolsVersion = 11.6;
+						DevelopmentTeam = S2DSCP4F3H;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -237,6 +392,8 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* dotLottieR_Example */,
 				607FACE41AFB9204008FA782 /* dotLottieR_Tests */,
+				94EB89F524DBC0CD007951BA /* dotLottieR_watchos */,
+				94EB8A0124DBC0CF007951BA /* dotLottieR_watchos Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +413,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EB89F424DBC0CD007951BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EB89FC24DBC0CF007951BA /* Assets.xcassets in Resources */,
+				94EB89FA24DBC0CD007951BA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EB8A0024DBC0CF007951BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EB8A0E24DBC0D0007951BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +465,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-dotLottieR_Example/Pods-dotLottieR_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImageLottieCoder/SDWebImageLottieCoder.framework",
-				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
-				"${BUILT_PRODUCTS_DIR}/dotLottieLoader/dotLottieLoader.framework",
-				"${BUILT_PRODUCTS_DIR}/dotLottieR/dotLottieR.framework",
-				"${BUILT_PRODUCTS_DIR}/librlottie/librlottie.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage-iOS/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageLottieCoder-iOS/SDWebImageLottieCoder.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip-iOS/Zip.framework",
+				"${BUILT_PRODUCTS_DIR}/dotLottieLoader-iOS/dotLottieLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/dotLottieR-iOS/dotLottieR.framework",
+				"${BUILT_PRODUCTS_DIR}/librlottie-iOS/librlottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -310,6 +484,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dotLottieR_Example/Pods-dotLottieR_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8747C6D115AE1ED06799B028 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dotLottieR_watchos Extension/Pods-dotLottieR_watchos Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage-watchOS/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageLottieCoder-watchOS/SDWebImageLottieCoder.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip-watchOS/Zip.framework",
+				"${BUILT_PRODUCTS_DIR}/dotLottieLoader-watchOS/dotLottieLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/dotLottieR-watchOS/dotLottieR.framework",
+				"${BUILT_PRODUCTS_DIR}/librlottie-watchOS/librlottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageLottieCoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/dotLottieLoader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/dotLottieR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/librlottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dotLottieR_watchos Extension/Pods-dotLottieR_watchos Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E37479D3B9AF505423D7EEB3 /* [CP] Check Pods Manifest.lock */ = {
@@ -328,6 +530,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-dotLottieR_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6609209A9D98AF956F2BA6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dotLottieR_watchos Extension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -354,6 +578,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94EB89FE24DBC0CF007951BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EB8A0C24DBC0CF007951BA /* NotificationController.swift in Sources */,
+				94EB8A0A24DBC0CF007951BA /* ExtensionDelegate.swift in Sources */,
+				94EB8A0824DBC0CF007951BA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -361,6 +595,16 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* dotLottieR_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		94EB8A0524DBC0CF007951BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94EB8A0124DBC0CF007951BA /* dotLottieR_watchos Extension */;
+			targetProxy = 94EB8A0424DBC0CF007951BA /* PBXContainerItemProxy */;
+		};
+		94EB8A1224DBC0D0007951BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94EB89F524DBC0CD007951BA /* dotLottieR_watchos */;
+			targetProxy = 94EB8A1124DBC0D0007951BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -379,6 +623,14 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		94EB89F824DBC0CD007951BA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94EB89F924DBC0CD007951BA /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -553,6 +805,126 @@
 			};
 			name = Release;
 		};
+		94EB8A1524DBC0D0007951BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = dotLottieR_watchos_Extension;
+				INFOPLIST_FILE = dotLottieR_watchos/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.dotLottieR-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		94EB8A1624DBC0D0007951BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = dotLottieR_watchos_Extension;
+				INFOPLIST_FILE = dotLottieR_watchos/Info.plist;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.dotLottieR-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		94EB8A1824DBC0D0007951BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C90FADAA7B0C699BD65D0400 /* Pods-dotLottieR_watchos Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S2DSCP4F3H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "dotLottieR_watchos Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.dotLottieR-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		94EB8A1924DBC0D0007951BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB304E78A880281FF1D1C34F /* Pods-dotLottieR_watchos Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2DSCP4F3H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "dotLottieR_watchos Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.dotLottieR-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,6 +951,24 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EB8A1A24DBC0D0007951BA /* Build configuration list for PBXNativeTarget "dotLottieR_watchos Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EB8A1824DBC0D0007951BA /* Debug */,
+				94EB8A1924DBC0D0007951BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EB8A1B24DBC0D0007951BA /* Build configuration list for PBXNativeTarget "dotLottieR_watchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EB8A1524DBC0D0007951BA /* Debug */,
+				94EB8A1624DBC0D0007951BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

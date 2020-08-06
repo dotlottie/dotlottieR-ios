@@ -1,0 +1,6 @@
+framework module dotLottieR {
+  umbrella header "dotLottieR-watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

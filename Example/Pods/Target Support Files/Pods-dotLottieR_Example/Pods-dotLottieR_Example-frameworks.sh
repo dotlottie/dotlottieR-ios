@@ -197,20 +197,20 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImageLottieCoder/SDWebImageLottieCoder.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Zip/Zip.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/dotLottieLoader/dotLottieLoader.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/dotLottieR/dotLottieR.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/librlottie/librlottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage-iOS/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImageLottieCoder-iOS/SDWebImageLottieCoder.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Zip-iOS/Zip.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/dotLottieLoader-iOS/dotLottieLoader.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/dotLottieR-iOS/dotLottieR.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/librlottie-iOS/librlottie.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImageLottieCoder/SDWebImageLottieCoder.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Zip/Zip.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/dotLottieLoader/dotLottieLoader.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/dotLottieR/dotLottieR.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/librlottie/librlottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage-iOS/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImageLottieCoder-iOS/SDWebImageLottieCoder.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Zip-iOS/Zip.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/dotLottieLoader-iOS/dotLottieLoader.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/dotLottieR-iOS/dotLottieR.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/librlottie-iOS/librlottie.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
