@@ -1,0 +1,35 @@
+{
+  "name": "dotLottieR",
+  "version": "0.1.0",
+  "summary": "An iOS library to natively render .lottie files with the help of rLottie Library https://dotlottie.io/",
+  "description": "dotLottieR is an open-source file format that aggregates one or more Lottie files and their associated resources into a single file. They are ZIP archives compressed with the Deflate compression method and carry the file extension of .lottie.",
+  "homepage": "https://github.com/dotlottie/dotLottieR-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "eharrison": "evandro.hoffmann@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/dotlottie/dotLottieR-ios.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "9.0",
+    "osx": "10.10",
+    "tvos": "9.0",
+    "watchos": "6.0"
+  },
+  "source_files": "Sources/**/*",
+  "dependencies": {
+    "dotLottieLoader": [
+      "~> 0.1.0"
+    ],
+    "SDWebImageLottieCoder": [
+      "~> 0.1.0"
+    ]
+  },
+  "swift_version": "5.0"
+}

@@ -1,0 +1,6 @@
+framework module dotLottieR {
+  umbrella header "dotLottieR-umbrella.h"
+
+  export *
+  module * { export * }
+}
