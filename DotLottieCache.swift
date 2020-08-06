@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum dotLottieCache {
+public enum DotLottieCache {
     /// ignores any existing cache and download/decompress again
     case ignoreCache
     
@@ -22,7 +22,7 @@ public enum dotLottieCache {
         case .ignoreCache:
             return url.isRemoteFile
         case .cache:
-            return !url.isLottieFileDownloaded
+            return !url.isFileDownloaded
         }
     }
     
@@ -34,7 +34,7 @@ public enum dotLottieCache {
         case .ignoreCache:
             return true
         case .cache:
-            return !url.isLottieFileDecompressed
+            return !url.isFileDecompressed
         }
     }
 }
