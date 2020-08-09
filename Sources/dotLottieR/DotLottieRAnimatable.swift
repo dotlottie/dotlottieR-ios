@@ -83,29 +83,38 @@ public extension DotLottieRAnimatable {
     }
 
     private func handleAnimationCompleted() {
-        guard isPlaying else { return }
+        currentFrame = 0
         
         switch loopMode {
         case .playOnce:
             break
         case .play(let times):
+            guard isPlaying else { return }
             guard times > 0 else { return }
             loopMode = .play(times: times-1)
-            currentFrame = 0
             nextFrame()
         case .loop:
-            currentFrame = 0
+            guard isPlaying else { return }
             nextFrame()
         }
     }
 
     func play() {
+        guard !isPlaying else { return }
         isPlaying = true
         nextFrame()
     }
     
     func pause() {
         isPlaying = false
+    }
+    
+    func togglePlay() {
+        if isPlaying {
+            pause()
+        } else {
+            play()
+        }
     }
 }
 

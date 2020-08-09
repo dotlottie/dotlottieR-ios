@@ -10,6 +10,8 @@ import SDWebImageLottieCoder
 
 #if os(watchOS)
 import WatchKit
+#elseif os(iOS)
+import UIKit
 #endif
 
 public class DotLottieRAnimator: DotLottieRAnimatable {
@@ -28,9 +30,14 @@ public class DotLottieRAnimator: DotLottieRAnimatable {
     }
     
     public func imageUpdated(image: UIImage?) {
-        #if os(watchOS)
-        let imageView = self.imageView as? WKInterfaceImage
-        imageView?.setImage(image)
-        #endif
+        DispatchQueue.main.async {
+            #if os(watchOS)
+            let imageView = self.imageView as? WKInterfaceImage
+            imageView?.setImage(image)
+            #elseif os(iOS)
+            let imageView = self.imageView as? UIImageView
+            imageView?.image = image
+            #endif
+        }
     }
 }

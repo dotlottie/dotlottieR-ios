@@ -11,16 +11,23 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="dotLottieR_watchos" customModuleProvider="target">
                     <items>
-                        <imageView height="137" alignment="left" contentMode="scaleAspectFit" id="OeZ-rz-5Oh"/>
-                        <imageView height="137" alignment="left" contentMode="scaleAspectFit" id="sm2-Ux-FzS"/>
-                        <imageView height="137" alignment="left" contentMode="scaleAspectFit" id="ba4-O2-iX8"/>
-                        <imageView height="137" alignment="left" contentMode="scaleAspectFit" id="ox1-Pa-ZAk"/>
+                        <table alignment="left" id="yQp-Zc-n2m">
+                            <items>
+                                <tableRow identifier="AnimationRow" id="eIP-zJ-LrF" customClass="AnimationRow" customModule="dotLottieR_watchos_Extension">
+                                    <group key="rootItem" width="1" height="124" alignment="left" id="ysp-b0-DBg">
+                                        <items>
+                                            <imageView width="1" height="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="1qP-fu-46N"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="1qP-fu-46N" id="mmh-gh-Hwp"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                     <connections>
-                        <outlet property="image1" destination="OeZ-rz-5Oh" id="liv-or-u21"/>
-                        <outlet property="image2" destination="sm2-Ux-FzS" id="tgj-RK-zai"/>
-                        <outlet property="image3" destination="ba4-O2-iX8" id="Rxh-Fl-2GU"/>
-                        <outlet property="image4" destination="ox1-Pa-ZAk" id="bxu-QJ-7WB"/>
+                        <outlet property="tableView" destination="yQp-Zc-n2m" id="HJn-8g-1Ov"/>
                     </connections>
                 </controller>
             </objects>
