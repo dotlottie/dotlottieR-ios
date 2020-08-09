@@ -10,7 +10,7 @@ import dotLottieLoader
 import SDWebImageLottieCoder
 import SDWebImage
 
-public class dotLottieR {
+public class DotLottieR {
     
     /// Enables log printing
     public static var isLogEnabled: Bool {
@@ -21,5 +21,4 @@ public class dotLottieR {
             dotLottieUtils.isLogEnabled = newValue
         }
     }
-    
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import dotLottieR
 
 class ViewController: UIViewController {
 

@@ -1,0 +1,12 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage-watchOS" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImageLottieCoder-watchOS" "${PODS_CONFIGURATION_BUILD_DIR}/Zip-watchOS" "${PODS_CONFIGURATION_BUILD_DIR}/dotLottieLoader-watchOS" "${PODS_CONFIGURATION_BUILD_DIR}/dotLottieR-watchOS" "${PODS_CONFIGURATION_BUILD_DIR}/librlottie-watchOS"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage-watchOS/SDWebImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImageLottieCoder-watchOS/SDWebImageLottieCoder.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Zip-watchOS/Zip.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/dotLottieLoader-watchOS/dotLottieLoader.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/dotLottieR-watchOS/dotLottieR.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/librlottie-watchOS/librlottie.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"z" -framework "ImageIO" -framework "SDWebImage" -framework "SDWebImageLottieCoder" -framework "Zip" -framework "dotLottieLoader" -framework "dotLottieR" -framework "librlottie"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
