@@ -54,6 +54,21 @@ import dotLottieR
 dotLottieR.isLogEnabled = true
 ```
  
+ ### Loading animation on iOS
+ 
+ ```swift
+ let animator = DotLottieRAnimator(url: url, imageView: anyImageView)
+ animator.loopMode = .loop
+ animator.play()
+ ```
+ 
+ ### Loading animation on watchOS
+ 
+ ```swift
+ let animator = DotLottieRAnimator(url: url, imageView: anyInterfaceImage)
+ animator.loopMode = .loop
+ animator.play()
+ ```
 
 ## Author
 
